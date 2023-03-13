@@ -1,0 +1,122 @@
+/* GENERAL */
+body {
+    text-align: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    padding-top: 20%;
+    color: whitesmoke;
+}
+h2 {
+    color: whitesmoke;
+}
+h4 {
+    display: inline-block;
+    margin: 0;
+    padding-left: 2%;
+}
+p {
+    font-size: 18px;
+}
+span {
+    color: hsl(0, 0%, 75%);
+}
+button {
+    display: block;
+    margin: 10% auto 0;
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    padding: 5% 10%;
+    color: whitesmoke;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1rem;
+    border-radius: 25px;
+    width: 80%;
+}
+button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* DIVS */
+main {
+    border-radius: 35px;
+    width: 50%;
+    margin: 6.5% auto;
+    display: flex;
+    box-shadow: 10px 10px 30px 5px hsl(221, 100%, 96%);
+}
+.div-left {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 35px;
+    width: 50%;
+    padding: 5% 0%;
+    flex: 1;
+}
+.div-left h3, p {
+    color: hsl(0, 0%, 75%);
+    margin: 0;
+    padding: 0% 15%;
+}
+.div-left-circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+.div-right {
+    width: 50%;
+    padding: 5% 0%;
+    flex: 1;
+    text-align: left;
+}
+.div-right h3 {
+    color: hsl(224, 30%, 27%);
+    margin-top: 0;
+    padding-left: 10%;
+}
+.num {
+    float: right;
+}
+.four {
+    margin: 4% auto;
+    width: 70%;
+    padding: 5%;
+    border-radius: 10px;
+}
+.div-reaction {
+    background-color: hsl(0, 100%, 98%);
+}
+.div-reaction h4 {
+    color: hsl(0, 70%, 67%);
+}
+.div-memory {
+    background-color: hsl(39, 100%, 98%);
+}
+.div-memory h4 {
+    color: hsl(39, 70%, 56%);
+}
+.div-verbal {
+    background-color: hsl(166, 100%, 98%);
+}
+.div-verbal h4 {
+    color: hsl(166, 70%, 37%);
+}
+.div-visual {
+    background-color: hsl(234, 85%, 98%);
+}
+.div-visual h4 {
+    color: hsl(234, 70%, 45%);
+}
+
+/* FOOTER */
+footer { 
+    font-size: 11px; 
+    text-align: center; 
+}
+footer a {
+     color: hsl(228, 45%, 44%); 
+}
