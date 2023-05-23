@@ -1,122 +1,235 @@
-/* GENERAL */
-body {
-    text-align: center;
-    font-family: 'Hanken Grotesk', sans-serif;
-}
-h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 0;
-    padding-top: 20%;
-    color: whitesmoke;
-}
-h2 {
-    color: whitesmoke;
-}
-h4 {
-    display: inline-block;
-    margin: 0;
-    padding-left: 2%;
-}
-p {
-    font-size: 18px;
-}
-span {
-    color: hsl(0, 0%, 75%);
-}
-button {
-    display: block;
-    margin: 10% auto 0;
-    background-color: hsl(224, 30%, 27%);
-    border: none;
-    padding: 5% 10%;
-    color: whitesmoke;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 1rem;
-    border-radius: 25px;
-    width: 80%;
-}
-button:hover {
-    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+:root {
+    /* Primary */
+    --lightRed: hsl(0, 100%, 67%);
+    --orangeyYellow: hsl(39, 100%, 56%);
+    --greenTeal: hsl(166, 100%, 37%);
+    --cobaltBlue: hsl(234, 85%, 45%);
+    /* Background */
+    --lightSlateBlue: hsl(252, 100%, 67%);
+    --lightRoyalBlue: hsl(241, 81%, 54%);
+    /* Circle */
+    --violetBlue: hsla(256, 72%, 46%, 1);
+    --persianBlue: hsla(241, 72%, 46%, 0);
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 100%, 89%);
+    --darkGrayBlue: hsl(224, 30%, 27%);
 }
 
-/* DIVS */
-main {
-    border-radius: 35px;
-    width: 50%;
-    margin: 6.5% auto;
-    display: flex;
-    box-shadow: 10px 10px 30px 5px hsl(221, 100%, 96%);
-}
-.div-left {
-    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    border-radius: 35px;
-    width: 50%;
-    padding: 5% 0%;
-    flex: 1;
-}
-.div-left h3, p {
-    color: hsl(0, 0%, 75%);
+* {
+    box-sizing: border-box;
     margin: 0;
-    padding: 0% 15%;
+    padding: 0;
 }
-.div-left-circle {
-    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    width: 150px;
-    height: 150px;
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    min-width: 264px;
+}
+
+/* Section Blue */
+.section-blue {
+    background: linear-gradient(var(--lightSlateBlue), var(--lightRoyalBlue));
+    border-radius: 0 0 35px 35px;
+    padding: 1rem 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--paleBlue);
+}
+
+h2 {
+    color: var(--paleBlue);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+h3 {
+    color: var(--lightLavender);
+    font-size: 1.2rem;
+}
+
+p {
+    color: var(--lightLavender);
+    margin-block: .5rem 1rem;
+}
+
+.section-blue-circle {
+    background: linear-gradient(var(--violetBlue), var(--persianBlue));
+    width: 125px;
+    height: 125px;
+    margin: 1rem auto;
+    padding: 7%;
     border-radius: 100px;
-    margin: 0 auto;
 }
-.div-right {
-    width: 50%;
-    padding: 5% 0%;
-    flex: 1;
+
+.section-blue-circle p {
+    filter: brightness(.8);
+    margin: 0;
+}
+
+/* Section White */
+.section-white {
+    padding: 1.5rem 2rem;
+}
+
+.section-white h3 {
+    color: var(--darkGrayBlue);
     text-align: left;
 }
-.div-right h3 {
-    color: hsl(224, 30%, 27%);
-    margin-top: 0;
-    padding-left: 10%;
-}
-.num {
-    float: right;
-}
-.four {
-    margin: 4% auto;
-    width: 70%;
-    padding: 5%;
-    border-radius: 10px;
-}
-.div-reaction {
-    background-color: hsl(0, 100%, 98%);
-}
-.div-reaction h4 {
-    color: hsl(0, 70%, 67%);
-}
-.div-memory {
-    background-color: hsl(39, 100%, 98%);
-}
-.div-memory h4 {
-    color: hsl(39, 70%, 56%);
-}
-.div-verbal {
-    background-color: hsl(166, 100%, 98%);
-}
-.div-verbal h4 {
-    color: hsl(166, 70%, 37%);
-}
-.div-visual {
-    background-color: hsl(234, 85%, 98%);
-}
-.div-visual h4 {
-    color: hsl(234, 70%, 45%);
+
+.div-four {
+    margin-block: 1.5rem;
 }
 
-/* FOOTER */
+.div-four > * {
+    justify-content: center;
+    display: flex;
+    margin-block: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.div-four h3 {
+    font-size: 1.1rem;
+}
+
+span {
+    opacity: 55%;
+}
+
+.img-h4 {
+    display: flex;
+    gap: .75rem;
+}
+
+.div-reaction {
+    background-color: hsl(0, 100%, 97%);
+}
+.div-reaction h4 {
+    color: var(--lightRed);
+}
+.div-memory {
+    background-color: hsl(39, 100%, 96%)
+}
+.div-memory h4 {
+    color: var(--orangeyYellow);
+}
+.div-verbal {
+    background-color: hsl(166, 100%, 96%);
+}
+.div-verbal h4 {
+    color: var(--greenTeal);
+}
+.div-visual {
+    background-color: hsl(234, 85%, 96%);
+}
+.div-visual h4 {
+    color: var(--cobaltBlue);
+}
+
+/* Button */
+button {
+    background-color: var(--darkGrayBlue);
+    border: none;
+    padding: 1rem;
+    color: var(--paleBlue);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(var(--lightSlateBlue), var(--lightRoyalBlue));
+}
+
+/* Footer */
 footer { 
     font-size: 11px; 
     text-align: center; 
 }
 footer a {
-     color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 500px) {
+    .section-blue-circle {
+        padding: 4%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        align-items: center;
+    }
+
+    main {
+        min-width: 550px;
+        max-width: 704px;
+        display: flex;
+        margin-block: 10%;
+        width: 65%;
+        border-radius: 35px;
+        box-shadow: 10px 10px 20px var(--paleBlue);
+    }
+
+    main > * {
+        flex: 1;
+    }
+
+    /* Section Blue */
+    .section-blue {
+        border-radius: 35px;
+        padding: 2.5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 18px;
+        margin-block: 1rem .5rem;
+    }
+
+    .section-blue-circle {
+        width: 175px;
+        height: 175px;
+        margin: 2rem auto;
+        padding: 13%;
+    }
+
+    /* Section White */
+    .section-white {
+        padding: 2.5rem 2rem;
+    }
+
+    .div-four {
+        margin-block: 2rem 2.5rem;
+    }
 }
